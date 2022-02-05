@@ -1,3 +1,20 @@
+- URL para utilização da API: http://aw-javachalleng.herokuapp.com/encomendas
+
+- Arquivo "docSwagger.yml" pode ser visualizar através da ferramenta https://editor.swagger.io/.
+
+Para visualizar o banco de dados é necessário ter instalado o "heroku" na sua máquina e executar o comando:
+```
+heroku pg:psql postgresql-flat-12710 --app aw-javachalleng
+```
+Para rodar o projeto na sua máquina é necessário ter o POSTGRESQL instalado e configurar os parâmetros no arquivo "application.properties":
+```
+spring.jpa.database=POSTGRESQL
+spring.sql.init.platform=postgres
+spring.datasource.url=jdbc:postgresql://localhost:5432/bd_name
+spring.datasource.username=postgres
+spring.datasource.password=password
+```
+
 # Teste de seleção para vaga de Java
 
 ## Faça um fork desse projeto e siga as instruções a seguir utilizando esse projeto.
